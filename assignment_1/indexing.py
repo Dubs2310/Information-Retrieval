@@ -128,7 +128,7 @@ term_frequency_inverse_document_frequency_matrix = [
 def print_doc_term_matrix(metric, doc_term_matrix):
     print(
         ("{:<30} " * (len(doc_term_matrix[0]) + 1)).format(
-            f"Document-Term Matrix ({metric})", 
+            f"\nDocument-Term Matrix ({metric})", 
             *(f'Term {i + 1} - "{terms[i]}"' for i in range(len(terms)))
         )
     )
